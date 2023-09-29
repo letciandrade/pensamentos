@@ -1,0 +1,12 @@
+# EditorConfig is awesome: https://EditorConfig.org
+
+# top-most EditorConfig file
+root = true
+
+[*]
+indent_style = space
+indent_size = 2 #linhas para pular pro lado
+end_of_line = crlf #
+charset = utf-8
+trim_trailing_whitespace = true
+insert_final_newline = false #ao final de toda linha de codigo em branco
