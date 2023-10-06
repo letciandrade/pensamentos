@@ -12,9 +12,9 @@ const conn = require('./db/conn')
 const User = require('./models/User')
 const Tought = require('./models/Tought')
 //importar rotas
-
+const toughtsRoutes = require('./routes/toughtsRoutes')
 //importar controleer
-
+const ToughtController = require('./controllers/ToughtController')
 //config engine
 app.engine('handlebars', exphbs.engine())
 app.set('view engine', 'handlebars')
@@ -56,7 +56,8 @@ app.use((req,res,next)=>{
   next()
 })
 //rotas
-
+app.use('/toughts', toughtsRoutes)
+app.get('/', ToughtController.showToughts)
 //conexao e criação das tabelas do banco
 conn
 .sync()
