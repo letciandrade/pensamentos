@@ -139,4 +139,5 @@ color: var(--blue);
 font-size: 1rem;
 width: 8rem;
 height: 2rem;
+cursor: pointer;
 }

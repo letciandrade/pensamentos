@@ -17,12 +17,7 @@ const User = db.define('User', {
     type: DataTypes.STRING,
     allowNull: false,
     require: true
-  },
-  confirmpassword:{
-    type: DataTypes.STRING,
-    allowNull: false,
-    require: true
-  },
+  }
 })
 
 module.exports = User
